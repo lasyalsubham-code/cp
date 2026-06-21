@@ -1,0 +1,44 @@
+#include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace std;
+ 
+// find_by_order, order_of_key: 0 indexed
+typedef __gnu_pbds::tree<int, __gnu_pbds::null_type, less<int>, 
+__gnu_pbds::rb_tree_tag, __gnu_pbds::tree_order_statistics_node_update>
+ ordered_set;
+ 
+#define nl '\n'
+#define vi vector<int>
+#define vvi vector<vector<int>>
+#define vvll vector<vector<long long>>
+#define vll vector<long long>
+#define pii pair<int,int>
+#define pll pair<long long,long long>
+#define mii map<int,int>
+#define vpii vector<pair<int,int>>
+#define vpll vector<pair<long long,long long>>
+#define ll long long
+#define MOD 1000000007
+#define sum_of_all(arr) accumulate(begin(arr),end(arr), (ll)0)
+#define largest(arr) *max_element(begin(arr),end(arr))
+ 
+/**struct cmppq{
+    bool operator()(pair<int, int> const& a, pair<int, int> const& b) {
+        // Example: Min-heap based on the second element
+        return a.second > b.second; 
+    }
+};**/
+/**bool cmpvec(pll const& a,pll const& b)
+{
+    return a.second<b.second;
+}**/
+ 
+void solve() {}
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+ 
+    int t=1;
+    for(int i=0;i<t;i++)solve();
+}
