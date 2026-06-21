@@ -1,0 +1,13 @@
+vector <
+        vector<pair<int, int>>>
+        makeAdjacencyList(int numVertices, const vector<vector<int>>& edges) {
+        vector<vector<pair<int, int>>> adjList(numVertices);
+
+        for (const vector<int>& edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            int w = edge[2];
+            adjList[u].push_back({v, w});
+        }
+        return adjList;
+}
